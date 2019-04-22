@@ -1,0 +1,5 @@
+2019-04-22 10:24:14 INFO  App:22 - veritabanı bağlantısı sağlandı.
+2019-04-22 10:24:14 INFO  App:51 - insert işlemi başarılı.
+2019-04-22 10:24:14 INFO  App:90 - update işlemi başarılı. 
+2019-04-22 10:24:14 INFO  App:106 - delete işlemi başarılı.
+2019-04-22 10:24:14 INFO  App:64 - select işlemi başarılı.

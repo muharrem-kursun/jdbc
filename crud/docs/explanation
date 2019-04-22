@@ -1,0 +1,12 @@
+                                                    GENEL YAPTIĞI İŞ
+     Bu örnek jdbc ile crud işlemlerini yapan ,loglala kullanılmış bir maven projesidir.
+
+                                                    write.properties
+     Bu  properties dosyasında loglama işlemini hangi dosyaya yapacağımızı , yazım formatını , dosya boyutunu ,maxsimum kaç dosya kullanabiliceği
+     ve izin verilen log komutlarını belirttik
+
+                                                    write.log
+     Bu dosya loglama bilgilerinin kaydedileceği dosyadır.
+
+                                                    pom.xml
+     veri tabanı ve loglama için gerekli bağımlılıkları eklediğimiz yer.
