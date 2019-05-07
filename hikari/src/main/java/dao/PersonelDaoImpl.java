@@ -18,10 +18,10 @@ public class PersonelDaoImpl implements PersonelDao {
     private final String USER_NAME = "root";
     private final String PASSWORD = "123";
 
-    private final String INSERT="insert into personel(Pid,Pad,Psoyad) values(?,?,?)";
-    private final String DELETE="delete from personel where Pid = ?";
-    private final String UPDATE="update personel set  Pad = ? ,Psoyad = ? where Pid = ? ";
-    private final String SELECT="select * from personel";
+    private final String INSERT = "insert into personel(Pid,Pad,Psoyad) values(?,?,?)";
+    private final String DELETE = "delete from personel where Pid = ?";
+    private final String UPDATE = "update personel set  Pad = ? ,Psoyad = ? where Pid = ? ";
+    private final String SELECT = "select * from personel";
 
 
     Connection connection = null;
