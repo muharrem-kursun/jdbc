@@ -1,0 +1,7 @@
+
+
+                                                   HİKARİ NEDİR
+    Dinamik veri batanlı içerik içeren uygulamalarda performansı arttırmak için kullanılan bir tekniktir.
+    Sürekli bağlantı oluşturup kapatmak ekstra maliyetlere sebeb olur hikari mevcut bağlantıları depolar
+    böylece açma kapama masrafından kurtulmuş oluruz.Hikarinin çalışma mantığı şöyledir oluşturulacak bağlantı
+    bağlantı havuzunda bulunuyorsa direkt havuzdan kullanır yoksa oluşturur.

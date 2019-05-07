@@ -1,6 +1,6 @@
 package model;
 
-public class personel {
+public class Personel {
     private String ad;
     private String soyad;
     private int id;
@@ -21,7 +21,7 @@ public class personel {
         this.soyad = soyad;
     }
 
-    public int getId() {
+    public  int getId() {
         return id;
     }
 
