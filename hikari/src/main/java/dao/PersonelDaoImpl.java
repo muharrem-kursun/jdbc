@@ -18,10 +18,11 @@ public class PersonelDaoImpl implements PersonelDao {
     private final String USER_NAME = "root";
     private final String PASSWORD = "123";
 
-    private final String INSERT = "insert into personel(Pid,Pad,Psoyad) values(?,?,?)";
-    private final String DELETE = "delete from personel where Pid = ?";
-    private final String UPDATE = "update personel set  Pad = ? ,Psoyad = ? where Pid = ? ";
-    private final String SELECT = "select * from personel";
+    private final String INSERT_DATA = "insert into personel(Pid,Pad,Psoyad) values(?,?,?)";
+    private final String DELETE_DATA = "delete from personel where Pid = ?";
+    private final String UPDATE_DATA = "update personel set  Pad = ? ,Psoyad = ? where Pid = ? ";
+    private final String TAKE_DATA = "select * from personel";
+
 
 
     Connection connection = null;
@@ -69,7 +70,7 @@ public class PersonelDaoImpl implements PersonelDao {
     public void insert(Personel personel) {
         try {
 
-            PreparedStatement preparedStatement = connection.prepareStatement(INSERT);
+            PreparedStatement preparedStatement = connection.prepareStatement(INSERT_DATA);
             preparedStatement.setInt(1, personel.getId());
             preparedStatement.setString(2,personel.getAd());
             preparedStatement.setString(3,personel.getSoyad());
@@ -87,7 +88,7 @@ public class PersonelDaoImpl implements PersonelDao {
     public void update(Personel personel) {
         try {
 
-            PreparedStatement preparedStatement = connection.prepareStatement(UPDATE);
+            PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DATA);
             preparedStatement.setInt(1, personel.getId());
             preparedStatement.setString(2,personel.getAd());
             preparedStatement.setString(3,personel.getSoyad());
@@ -105,7 +106,7 @@ public class PersonelDaoImpl implements PersonelDao {
     public void delete(Personel personel) {
         try {
 
-            PreparedStatement preparedStatement = connection.prepareStatement(DELETE);
+            PreparedStatement preparedStatement = connection.prepareStatement(DELETE_DATA);
             preparedStatement.setInt(1, personel.getId());
             preparedStatement.executeUpdate();
             LOGGER.info("delete işlemi başarılı");
@@ -121,7 +122,7 @@ public class PersonelDaoImpl implements PersonelDao {
     public void select() {
         try {
 
-            PreparedStatement preparedStatement = connection.prepareStatement(SELECT);
+            PreparedStatement preparedStatement = connection.prepareStatement(TAKE_DATA);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next())
             {
